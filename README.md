@@ -13,7 +13,7 @@ Development of a single REST endpoint GET /greeting which behaves in a manner th
 1. Given the following input values account=personal and id=123 
 and the allowable values for an account are personal and business
 and the allowable values for id are all positive integers
-then return "Hi, userId 123".
+then return "Hi, userId 123"
 
 2. Given the following input values account=business and type=small and 
 and the allowable values for an account are personal and business
