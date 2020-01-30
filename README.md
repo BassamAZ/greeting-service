@@ -1,4 +1,3 @@
-
 # **Greeting Service**
 
 **The purpose of this service**
@@ -46,6 +45,8 @@ Contains simple methods which commonly used by other clients:
 | POST   | /greeting/{greeting}| Get greeting data |                    |                   |
 
 
-Notes:
+##Code analysis:
 
--
+[![Build Status](https://travis-ci.org/BassamAZ/greeting-service.svg?branch=master)](https://travis-ci.org/BassamAZ/greeting-service)
+
+[![codecov](https://codecov.io/gh/BassamAZ/greeting-service/branch/master/graph/badge.svg)](https://codecov.io/gh/BassamAZ/greeting-service)
