@@ -1,0 +1,28 @@
+sudo: required
+language: java
+jdk: oraclejdk8
+install: true
+
+cache:
+  directories:
+    - "$HOME/.cache"
+addons:
+  sonarcloud:
+    organization: "bassamaz-github" # the key of the org you chose at step #3
+    token:
+      secure: 13bb79d19f78c093008484165c479ad47efd994e # encrypted value of your token
+
+services:
+  - docker
+
+before_install:
+  - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
+
+script:
+  - mvn clean install
+#  - sonar-scanner
+  - docker build -t $DOCKER_USERNAME/greeting-service:$TRAVIS_BUILD_ID .
+  - docker push $DOCKER_USERNAME/greeting-service:$TRAVIS_BUILD_ID
+
+after_success:
+#  - bash <(curl -s https://codecov.io/bash)
