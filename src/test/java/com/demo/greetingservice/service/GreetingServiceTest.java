@@ -21,6 +21,16 @@ public class GreetingServiceTest {
     }
 
     @Test
+    public void testGreetingServiceWithInvalidPersonalAccount() {
+        Assert.assertEquals(null, greetingService.getGreeting(null, 123, null));
+    }
+
+    @Test
+    public void testGreetingServiceWithInvalidPersonalId() {
+        Assert.assertEquals(null, greetingService.getGreeting(AccountType.PERSONAL.getValue(), null, null));
+    }
+
+    @Test
     public void testGreetingServiceWithValidBusinessAccount() {
         Assert.assertEquals("Welcome, business user!", greetingService.getGreeting(AccountType.BUSINESS.getValue(), null, "big"));
     }
