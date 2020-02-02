@@ -6,6 +6,11 @@
 
 [![codecov](https://codecov.io/gh/BassamAZ/greeting-service/branch/master/graph/badge.svg)](https://codecov.io/gh/BassamAZ/greeting-service)
 
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=BassamAZ_greeting-service&metric=reliability_rating)](https://sonarcloud.io/dashboard?id=BassamAZ_greeting-service)
+
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=BassamAZ_greeting-service&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=BassamAZ_greeting-service)
+
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=BassamAZ_greeting-service&metric=alert_status)](https://sonarcloud.io/dashboard?id=BassamAZ_greeting-service)
 
 # **Greeting Service**
 
