@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.validation.constraints.Min;
+import java.util.Optional;
 
 @RestController
 @Validated
@@ -24,13 +25,7 @@ public class GreetingController {
                               @RequestParam(name = "id", required = false) @Min(value = 0, message = "The id should be positive value") Integer id,
                               @RequestParam(name = "type", required = false) String type) {
 
-        return greetingService.getGreeting(account, id, type);
+        return Optional.ofNullable(greetingService.getGreeting(account, id, type)).orElse("path is not yet implemented");
     }
-
-   /* @ExceptionHandler({ConstraintViolationException.class})
-    public String constraintViolationHandler(ConstraintViolationException ex) {
-            return ex.getConstraintViolations().iterator().next()
-                    .getMessage();
-    }*/
 
 }

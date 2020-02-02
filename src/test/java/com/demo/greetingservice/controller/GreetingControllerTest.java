@@ -28,16 +28,16 @@ public class GreetingControllerTest {
         Assert.assertEquals("Hi, userId 123", greetingController.getGreeting(AccountType.PERSONAL.getValue(), 123, null));
     }
 
-/*    @Test (expected = ConstraintViolationException.class)
-    public void testGreetingWithNegativeID() {
-        Mockito.when(greetingService.getGreeting(AccountType.PERSONAL.getValue(), -1, null)).thenReturn("Hi, userId -1");
-        greetingController.getGreeting(AccountType.PERSONAL.getValue(), -1, null);
-    }*/
-
     @Test
     public void testGreetingWithValidBusinessAccount() {
         Mockito.when(greetingService.getGreeting(AccountType.BUSINESS.getValue(), null, "big")).thenReturn("Welcome, business user!");
         Assert.assertEquals("Welcome, business user!", greetingController.getGreeting(AccountType.BUSINESS.getValue(), null, "big"));
+    }
+
+    @Test
+    public void testGreetingWithInValidBusinessAccount() {
+        Mockito.when(greetingService.getGreeting(AccountType.BUSINESS.getValue(), null, "small")).thenReturn(null);
+        Assert.assertEquals("path is not yet implemented", greetingController.getGreeting(AccountType.BUSINESS.getValue(), null, "small"));
     }
 
 

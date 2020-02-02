@@ -9,10 +9,13 @@ public class GreetingService {
 
     public String getGreeting(String account, Integer id, String type) {
 
-        if (AccountType.PERSONAL.getValue().equals(account) && id != null) {
+        if (AccountType.PERSONAL.getValue().equals(account)) {
             return "Hi, userId " + id;
-        } else if ("big".equals(type) && AccountType.BUSINESS.getValue().equals(account)) {
-            return "Welcome, business user!";
+        } else if (AccountType.BUSINESS.getValue().equals(account)) {
+
+            if ("big".equals(type)) {
+                return "Welcome, business user!";
+            }
         }
 
         return null;
