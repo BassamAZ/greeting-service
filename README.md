@@ -1,16 +1,7 @@
-**Code analysis:**
+[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=BassamAZ_greeting-service)](https://sonarcloud.io/dashboard?id=BassamAZ_greeting-service)
 
-[![Build Status](https://travis-ci.org/BassamAZ/greeting-service.svg?branch=master)](https://travis-ci.org/BassamAZ/greeting-service)
+[![Build Status](https://travis-ci.org/BassamAZ/greeting-service.svg?branch=master)](https://travis-ci.org/BassamAZ/greeting-service) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/d0883dda239d48e5bc7cf2fcde876b8d)](https://app.codacy.com/manual/BassamAZ/greeting-service?utm_source=github.com&utm_medium=referral&utm_content=BassamAZ/greeting-service&utm_campaign=Badge_Grade_Dashboard) [![codecov](https://codecov.io/gh/BassamAZ/greeting-service/branch/master/graph/badge.svg)](https://codecov.io/gh/BassamAZ/greeting-service) [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=BassamAZ_greeting-service&metric=reliability_rating)](https://sonarcloud.io/dashboard?id=BassamAZ_greeting-service) [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=BassamAZ_greeting-service&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=BassamAZ_greeting-service)
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d0883dda239d48e5bc7cf2fcde876b8d)](https://app.codacy.com/manual/BassamAZ/greeting-service?utm_source=github.com&utm_medium=referral&utm_content=BassamAZ/greeting-service&utm_campaign=Badge_Grade_Dashboard)
-
-[![codecov](https://codecov.io/gh/BassamAZ/greeting-service/branch/master/graph/badge.svg)](https://codecov.io/gh/BassamAZ/greeting-service)
-
-[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=BassamAZ_greeting-service&metric=reliability_rating)](https://sonarcloud.io/dashboard?id=BassamAZ_greeting-service)
-
-[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=BassamAZ_greeting-service&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=BassamAZ_greeting-service)
-
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=BassamAZ_greeting-service&metric=alert_status)](https://sonarcloud.io/dashboard?id=BassamAZ_greeting-service)
 
 # **Greeting Service**
 
