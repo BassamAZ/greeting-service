@@ -25,10 +25,6 @@ public class GreetingServiceTest {
         Assert.assertEquals(null, greetingService.getGreeting(null, 123, null));
     }
 
-    @Test
-    public void testGreetingServiceWithInvalidPersonalId() {
-        Assert.assertEquals(null, greetingService.getGreeting(AccountType.PERSONAL.getValue(), null, null));
-    }
 
     @Test
     public void testGreetingServiceWithValidBusinessAccount() {

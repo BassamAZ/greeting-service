@@ -14,4 +14,4 @@ fixes:
   - "home/travis/build/greeting-service"
 
 ignore:
-  - "src/main/java/com/demo/greetingservice/model/AccountType.java"
+  - "src/main/java/com/demo/greetingservice/model/**/*"
