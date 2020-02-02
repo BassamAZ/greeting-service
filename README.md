@@ -8,7 +8,7 @@
 **The purpose of this service**
 
 
-The purpose of Greeting service is mainly to give demonstration of code writing basis.
+It is mainly to give demonstration of code writing basis.
 
 ## **Required Scope**
 

@@ -25,10 +25,14 @@ public class GreetingController {
         return greetingService.getGreeting(account, id, type);
     }
 
-    @ExceptionHandler
+    @ExceptionHandler({ConstraintViolationException.class})
     public String constraintViolationHandler(ConstraintViolationException ex) {
-        return ex.getConstraintViolations().iterator().next()
-                .getMessage();
+        if (ex.getConstraintViolations() != null) {
+            return ex.getConstraintViolations().iterator().next()
+                    .getMessage();
+        }
+
+        return "no constraints violations message";
     }
 
 }

@@ -11,7 +11,6 @@ class GreetingServiceApplicationTests {
     public void contextLoads() {
         GreetingServiceApplication.main(new String[]{""});
         Assert.assertEquals("done", "done");
-
     }
 
 }
