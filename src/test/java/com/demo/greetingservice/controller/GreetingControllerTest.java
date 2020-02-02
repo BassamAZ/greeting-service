@@ -38,14 +38,14 @@ public class GreetingControllerTest {
 
     @Test
     public void testGreetingWithValidBusinessAccount() {
-        Mockito.when(greetingService.getGreeting(AccountType.BUSINESS.getValue(), 333, "big")).thenReturn("Welcome, business user!");
-        Assert.assertEquals("Welcome, business user!", greetingController.getGreeting(AccountType.BUSINESS.getValue(), 333, "big"));
+        Mockito.when(greetingService.getGreeting(AccountType.BUSINESS.getValue(), null, "big")).thenReturn("Welcome, business user!");
+        Assert.assertEquals("Welcome, business user!", greetingController.getGreeting(AccountType.BUSINESS.getValue(), null, "big"));
     }
 
-    @Test
+    @Test(expected = NullPointerException.class)
     public void testConstraintViolationHandlerWithInvalidData() {
         ConstraintViolationException constraintViolationException = new ConstraintViolationException("This is Constraint Violation msg", null);
-        Assert.assertEquals("no constraints violations message", greetingController.constraintViolationHandler(constraintViolationException));
+        Assert.assertEquals("This is Constraint Violation msg", greetingController.constraintViolationHandler(constraintViolationException));
     }
 
 }

@@ -27,12 +27,9 @@ public class GreetingController {
 
     @ExceptionHandler({ConstraintViolationException.class})
     public String constraintViolationHandler(ConstraintViolationException ex) {
-        if (ex.getConstraintViolations() != null) {
             return ex.getConstraintViolations().iterator().next()
                     .getMessage();
-        }
 
-        return "no constraints violations message";
     }
 
 }
