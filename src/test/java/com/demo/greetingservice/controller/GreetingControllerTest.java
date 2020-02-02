@@ -6,6 +6,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
+import org.mockito.Mockito;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
@@ -22,8 +23,7 @@ public class GreetingControllerTest {
 
     @Test
     public void getGreeting() {
-
-        Assert.assertEquals(true, true);
-
+        Mockito.when(greetingService.getGreeting("personal", 123, null)).thenReturn("Hi, userId 123");
+        Assert.assertEquals(greetingController.getGreeting("personal", 123, null), "Hi, userId 123");
     }
 }

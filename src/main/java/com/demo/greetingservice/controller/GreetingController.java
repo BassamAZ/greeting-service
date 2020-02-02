@@ -14,7 +14,7 @@ import javax.validation.constraints.Min;
 public class GreetingController {
 
     @Autowired
-    GreetingService greetingService;
+    private GreetingService greetingService;
 
     @GetMapping("/greeting")
     @ResponseBody

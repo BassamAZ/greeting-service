@@ -11,7 +11,7 @@ public class GreetingService {
 
         if (StringUtils.isEmpty(type)) {
             return "Hi, userId " + id;
-        } else if (type.equals("big") && account.equals("business")) {
+        } else if ("big".equals(type) && "business".equals(account)) {
             return "Welcome, business user!";
         }
 
