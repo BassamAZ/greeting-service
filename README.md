@@ -1,5 +1,4 @@
-
-##Code analysis:
+**Code analysis:**
 
 [![Build Status](https://travis-ci.org/BassamAZ/greeting-service.svg?branch=master)](https://travis-ci.org/BassamAZ/greeting-service)
 

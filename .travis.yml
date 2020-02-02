@@ -10,7 +10,8 @@ addons:
   sonarcloud:
     organization: "bassamaz-github" # the key of the org you chose at step #3
     token:
-      secure: 13bb79d19f78c093008484165c479ad47efd994e # encrypted value of your token
+      secure: 4d141cae67c6c4dc3f976ca3562a1f024b33a385 # encrypted value of your token
+
 
 services:
   - docker
