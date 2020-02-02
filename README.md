@@ -1,3 +1,13 @@
+
+##Code analysis:
+
+[![Build Status](https://travis-ci.org/BassamAZ/greeting-service.svg?branch=master)](https://travis-ci.org/BassamAZ/greeting-service)
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d0883dda239d48e5bc7cf2fcde876b8d)](https://app.codacy.com/manual/BassamAZ/greeting-service?utm_source=github.com&utm_medium=referral&utm_content=BassamAZ/greeting-service&utm_campaign=Badge_Grade_Dashboard)
+
+[![codecov](https://codecov.io/gh/BassamAZ/greeting-service/branch/master/graph/badge.svg)](https://codecov.io/gh/BassamAZ/greeting-service)
+
+
 # **Greeting Service**
 
 **The purpose of this service**
@@ -44,9 +54,3 @@ Contains simple methods which commonly used by other clients:
 | GET    | /greeting/          | Get all greeting data        |                    |                   |
 | POST   | /greeting/{greeting}| Get greeting data |                    |                   |
 
-
-##Code analysis:
-
-[![Build Status](https://travis-ci.org/BassamAZ/greeting-service.svg?branch=master)](https://travis-ci.org/BassamAZ/greeting-service)
-
-[![codecov](https://codecov.io/gh/BassamAZ/greeting-service/branch/master/graph/badge.svg)](https://codecov.io/gh/BassamAZ/greeting-service)
