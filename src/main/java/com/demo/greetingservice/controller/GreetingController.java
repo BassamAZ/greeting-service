@@ -4,9 +4,11 @@ package com.demo.greetingservice.controller;
 import com.demo.greetingservice.service.GreetingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
-import javax.validation.ConstraintViolationException;
 import javax.validation.constraints.Min;
 
 @RestController
@@ -25,11 +27,10 @@ public class GreetingController {
         return greetingService.getGreeting(account, id, type);
     }
 
-    @ExceptionHandler({ConstraintViolationException.class})
+   /* @ExceptionHandler({ConstraintViolationException.class})
     public String constraintViolationHandler(ConstraintViolationException ex) {
             return ex.getConstraintViolations().iterator().next()
                     .getMessage();
-
-    }
+    }*/
 
 }

@@ -1,5 +1,8 @@
 package com.demo.greetingservice.model;
 
+import lombok.Getter;
+
+@Getter
 public enum AccountType {
 
     PERSONAL("personal"),
@@ -11,7 +14,4 @@ public enum AccountType {
         this.value = type;
     }
 
-    public String getValue() {
-        return value;
-    }
 }
