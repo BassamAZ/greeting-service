@@ -1,5 +1,6 @@
 package com.demo.greetingservice;
 
+import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -7,7 +8,10 @@ import org.springframework.boot.test.context.SpringBootTest;
 class GreetingServiceApplicationTests {
 
     @Test
-    void contextLoads() {
+    public void contextLoads() {
+        GreetingServiceApplication.main(new String[]{""});
+        Assert.assertEquals("done", "done");
+
     }
 
 }

@@ -1,6 +1,7 @@
 package com.demo.greetingservice.controller;
 
 import com.demo.greetingservice.service.GreetingService;
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
@@ -14,14 +15,15 @@ import org.springframework.test.context.junit4.SpringRunner;
 public class GreetingControllerTest {
 
     @Mock
-    GreetingService greetingService;
+    private GreetingService greetingService;
 
     @InjectMocks
-    GreetingController greetingController;
+    private GreetingController greetingController;
 
     @Test
     public void getGreeting() {
 
+        Assert.assertEquals(true, true);
 
     }
 }

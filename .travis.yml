@@ -21,7 +21,7 @@ before_install:
 
 script:
   - mvn clean install
-#  - sonar-scanner
+  - sonar-scanner
   - docker build -t $DOCKER_USERNAME/greeting-service:$TRAVIS_BUILD_ID .
   - docker push $DOCKER_USERNAME/greeting-service:$TRAVIS_BUILD_ID
 
