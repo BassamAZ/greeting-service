@@ -25,4 +25,9 @@ public class GreetingServiceTest {
         Assert.assertEquals("Welcome, business user!", greetingService.getGreeting(AccountType.BUSINESS.getValue(), null, "big"));
     }
 
+    @Test
+    public void testGreetingServiceWithInvalidData() {
+        Assert.assertEquals(null, greetingService.getGreeting(AccountType.BUSINESS.getValue(), null, "small"));
+    }
+
 }
