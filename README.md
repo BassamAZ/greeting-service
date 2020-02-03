@@ -45,4 +45,4 @@ Contains simple methods which commonly used by other clients:
 
 | Method | Path                | Description                  | 
 |--------|---------------------|------------------------------|
-| GET    | /greeting/{id}      | Get specified greeting data  |
+| GET    | /greeting/account={account}&&id={id}&&type={type}      | Get specified greeting data  |

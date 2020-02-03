@@ -3,18 +3,20 @@ package com.telenor.demo.service;
 import com.telenor.demo.model.AccountSize;
 import com.telenor.demo.model.AccountType;
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest
 public class GreetingServiceTest {
 
-    @Autowired
     private GreetingService greetingService;
+
+    @Before
+    public void setUp() {
+        greetingService = new GreetingService();
+    }
 
     @Test
     public void testGreetingServiceWithPersonalAccount() {
