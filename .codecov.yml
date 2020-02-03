@@ -14,5 +14,5 @@ fixes:
   - "home/travis/build/greeting-service"
 
 ignore:
-  - "src/main/java/com/demo/greetingservice/model/**/*"
-  - "src/main/java/com/demo/greetingservice/swagger/**/*"
+  - "src/main/java/com/telenor/demo/model/**/*"
+  - "src/main/java/com/telenor/demo/swagger/**/*"
