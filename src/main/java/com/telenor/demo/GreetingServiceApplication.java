@@ -1,4 +1,4 @@
-package com.demo.greetingservice;
+package com.telenor.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

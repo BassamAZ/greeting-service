@@ -1,4 +1,4 @@
-package com.demo.greetingservice.model;
+package com.telenor.demo.model;
 
 import lombok.Getter;
 

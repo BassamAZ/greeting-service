@@ -1,4 +1,4 @@
-package com.demo.greetingservice.swagger;
+package com.telenor.demo.swagger;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

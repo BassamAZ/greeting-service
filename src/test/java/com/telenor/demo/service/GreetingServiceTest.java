@@ -1,6 +1,7 @@
-package com.demo.greetingservice.service;
+package com.telenor.demo.service;
 
-import com.demo.greetingservice.model.AccountType;
+import com.telenor.demo.model.AccountSize;
+import com.telenor.demo.model.AccountType;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -22,18 +23,18 @@ public class GreetingServiceTest {
 
     @Test
     public void testGreetingServiceWithInvalidPersonalAccount() {
-        Assert.assertEquals(null, greetingService.getGreeting(null, 123, null));
+        Assert.assertNull(greetingService.getGreeting(null, 123, null));
     }
 
 
     @Test
     public void testGreetingServiceWithValidBusinessAccount() {
-        Assert.assertEquals("Welcome, business user!", greetingService.getGreeting(AccountType.BUSINESS.getValue(), null, "big"));
+        Assert.assertEquals("Welcome, business user!", greetingService.getGreeting(AccountType.BUSINESS.getValue(), null, AccountSize.BIG.getValue()));
     }
 
     @Test
     public void testGreetingServiceWithInvalidData() {
-        Assert.assertEquals(null, greetingService.getGreeting(AccountType.BUSINESS.getValue(), null, "small"));
+        Assert.assertNull(greetingService.getGreeting(AccountType.BUSINESS.getValue(), null, AccountSize.SMALL.getValue()));
     }
 
 }
