@@ -35,9 +35,15 @@ public class GreetingControllerTest {
     }
 
     @Test
-    public void testGreetingWithInValidBusinessAccount() {
+    public void testGreetingWithInvalidBusinessAccount() {
         Mockito.when(greetingService.getGreeting(AccountType.BUSINESS.getValue(), null, "small")).thenReturn(null);
         Assert.assertEquals("path is not yet implemented", greetingController.getGreeting(AccountType.BUSINESS.getValue(), null, "small"));
+    }
+
+    @Test
+    public void testGreetingWithNegativeID() {
+        Mockito.when(greetingService.getGreeting(AccountType.PERSONAL.getValue(), -1, null)).thenReturn("The id should be positive value");
+        Assert.assertEquals("The id should be positive value", greetingController.getGreeting(AccountType.PERSONAL.getValue(), -1, null));
     }
 
 

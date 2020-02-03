@@ -43,9 +43,6 @@ Please provide an archive with the source code and a list of the terminal comman
 
 Contains simple methods which commonly used by other clients:
 
-| Method | Path                | Description                  | User authenticated | Available from UI |
-|--------|---------------------|------------------------------|--------------------|-------------------|
-| GET    | /greeting/{id}      | Get specified greeting data   |                    |                   |
-| GET    | /greeting/          | Get all greeting data        |                    |                   |
-| POST   | /greeting/{greeting}| Get greeting data |                    |                   |
-
+| Method | Path                | Description                  | 
+|--------|---------------------|------------------------------|
+| GET    | /greeting/{id}      | Get specified greeting data  |
